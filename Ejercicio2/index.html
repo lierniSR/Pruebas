@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="text" name="nombre" id="nombre" placeholder="Inserte el nombre">
+        <input type="tel" name="telefono" id="telefono" placeholder="Inserte el número telefónico">
+        <input type="email" name="email" id="email" placeholder="Inserte el email">
+        <input type="submit" value="AÑADIR CONTACTO" id="boton">
+    </form>
+
+    <!-- El Modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <label for="nombreModal">Nombre </label>
+            <input type="text" name="nombreModal" id="nombreModal">
+            <br>
+            <br>
+            <label for="telefonoModal">Teléfono </label>
+            <input type="tel" name="telefonoModal" id="telefonoModal">
+            <br>
+            <br>
+            <label for="gmailModal">Gmail </label>
+            <input type="email" name="gmailModal" id="gmailModal">
+            <br>
+            <br>
+            <button type="submit" name="modalBoton" id="modalBoton">ACTUALIZAR</button>
+            <p style="display: none;" id="infor"></p>
+        </div>
+    </div>
+    <script src="Ejercicio2.js"></script>
+    <script src="Contacto.js"></script>
+</body>
+</html>
